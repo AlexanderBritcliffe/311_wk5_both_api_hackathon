@@ -11,5 +11,9 @@ const getEmployees = (req, res) => {
         return res.json(rows);
     })
 }
+if(req.query.include.indexOf("salary") > -1){
+    //get the salary
+  }
+
 
 module.exports = { getEmployeesById }
